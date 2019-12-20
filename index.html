@@ -79,10 +79,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 
-$.ajax({
+function pullArticles(){
+
+var queryURL="https://api.nytimes.com/svc/search/v2/articlesearch.json";
+
+    $.ajax({
     url: queryURL,
     method: "GET"
 })
+
+}
+
 
 
 
