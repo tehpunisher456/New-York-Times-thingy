@@ -84,7 +84,9 @@ function pullArticles(){
 
 var queryURL="https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
-var queryParam = {"api-key":  "4sjYNVv3Kcu272aLPGYLieVV69vMADf6"};
+
+
+var queryParam = {"api-key": 4sjYNVv3Kcu272aLPGYLieVV69vMADf6};
 
 queryParam.q = $("#exampleFormControlInput1")
 .val()
@@ -104,13 +106,12 @@ console.log(queryURL
 }
 
 
-
+var queryURL="https://api.nytimes.com/svc/search/v2/articlesearch.json";
 $.ajax({
-    url: queryURL,
+    url: queryURL + "#searchID"
     method: "GET"
 })
 
-}
 
 function clear() {
     $(".topArticlesPush").empty();
