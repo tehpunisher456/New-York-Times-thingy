@@ -113,7 +113,31 @@ $.ajax({
 
 }
 
+<<<<<<< HEAD
 $("#searchID").on("click", pullArticles() )
+=======
+function clear() {
+    $(".topArticlesPush").empty();
+}
+
+$("#searchID").on("click", function(event) {
+
+    event.preventDefault();
+
+    clear();
+
+    var queryURL = pullArticles();
+
+    $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(updatePage);
+
+});
+
+$("#clearID").on("click", clear);
+
+>>>>>>> c1ae9063ead2f1e7d1a075c854e4e3aa9d02c492
 
 
 </script>
