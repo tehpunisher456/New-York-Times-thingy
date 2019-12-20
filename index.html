@@ -81,7 +81,8 @@
 <script type="text/javascript">
 
 function pullArticles(){
-
+$()
+console.log("doing dank check")
 var queryURL="https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
     $.ajax({
@@ -91,7 +92,7 @@ var queryURL="https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
 }
 
-
+$("#searchID").on("click", pullArticles() )
 
 
 </script>
