@@ -4,3 +4,11 @@
     text-align: center;
     font-weight: bold !important;
 }
+.btn{
+    margin-left: 15px; 
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-left: 3%;
+    margin-right: 3%;
+}
