@@ -85,7 +85,28 @@ $()
 console.log("doing dank check")
 var queryURL="https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
-    $.ajax({
+var queryParam = {"api-key":  "4sjYNVv3Kcu272aLPGYLieVV69vMADf6"};
+
+queryParam.q = $("#exampleFormControlInput1")
+.val()
+.trim();
+
+var startYear = $("#exampleformControlInput3")
+.val()
+.trim();
+
+var endYear =$("#exampleFormControlInput4")
+.val()
+.trim();
+
+console.log(queryURL
+)
+
+}
+
+
+
+$.ajax({
     url: queryURL,
     method: "GET"
 })
