@@ -81,7 +81,8 @@
 <script type="text/javascript">
 
 function pullArticles(){
-
+$()
+console.log("doing dank check")
 var queryURL="https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
 
@@ -113,6 +114,9 @@ $.ajax({
 })
 
 
+<<<<<<< HEAD
+$("#searchID").on("click", pullArticles() )
+=======
 function clear() {
     $(".topArticlesPush").empty();
 }
@@ -134,6 +138,7 @@ $("#searchID").on("click", function(event) {
 
 $("#clearID").on("click", clear);
 
+>>>>>>> c1ae9063ead2f1e7d1a075c854e4e3aa9d02c492
 
 
 </script>
