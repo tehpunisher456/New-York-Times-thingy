@@ -91,6 +91,26 @@ var queryURL="https://api.nytimes.com/svc/search/v2/articlesearch.json";
 
 }
 
+function clear() {
+    $(".topArticlesPush").empty();
+}
+
+$("#searchID").on("click", function(event) {
+
+    event.preventDefault();
+
+    clear();
+
+    var queryURL = pullArticles();
+
+    $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(updatePage);
+
+});
+
+$("#clearID").on("click", clear);
 
 
 
